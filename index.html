@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>buffer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/buffer-navbar.css">
+    <link rel="stylesheet" href="css/buffer-hero.css">
+    <link rel="stylesheet" href="css/buffer-stats-section.css">
+    <link rel="stylesheet" href="css/buffer-features-section.css">
+    <link rel="stylesheet" href="css/buffer-features-section-2.css">
+    <link rel="stylesheet" href="css/buffer-favourite-accounts.css">
+    <link rel="stylesheet" href="css/buffer-audience-section.css">
+    <link rel="stylesheet" href="css/customer-support-section.css">
+    <link rel="stylesheet" href="css/buffer-resources-section.css">
+    <link rel="stylesheet" href="css/buffer-aboutus-section.css">
+    <link rel="stylesheet" href="css/buffer-get-started-card.css">
+    <link rel="stylesheet" href="css/buffer-footer-section.css">
+    <style>
+      *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root{
+        --hover-effect-color: rgb(233, 233, 233);
+        --primary-green-color: rgb(176, 236, 156);
+        --api-div-footer-bg: rgb(33, 49, 48);
+        --gray-color-description: rgb(153, 153, 153);
+        --pink-card-bg: rgb(255, 178, 255);
+        --yellow-card-bg: rgb(252, 206, 121);
+        --blue-card-bg: rgb(132, 195, 249);
+        --box-shadow: 0 8px 16px rgba(156, 156, 156, 0.4);
+        --primary-border-radius: 12px;
+        --secondary-border-radius: 24px;
+        --primary-padding: clamp(1rem, 3vw, 8rem);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="Images/Screenshot_2026-06-06_110603-removebg-preview.png" alt="logo">
+        </div>
+        <ul>
+          <li class="list">
+            <div class="list-item">Features</div>
+            <div class="list-item-dropdown-arrow">▾
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-item">Integrations</div>
+            <div class="list-item-dropdown-arrow">▾
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-item">Made for</div>
+            <div class="list-item-dropdown-arrow">▾
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-item">Resources</div>
+            <div class="list-item-dropdown-arrow">▾
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-item">Pricing</div>
+          </li>
+        </ul>
+        <div class="navigation-buttons">
+          <button class="login-button">
+            Log in
+          </button>
+          <button class="get-started-button">
+            Get started for free
+          </button>
+          <button class="hamburger-menu">&#9776;</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="API-div">
+        <div class="API-content">
+          <img src="Images/Buffer_Logo_1.png" alt="logo">
+          <h2>
+            <span>API</span> IS HERE
+          </h2>
+        </div>
+        <div class="dev-mode">
+          <h2>Dev mode</h2>
+          <input id="toggle" type="checkbox">
+          <label class="dev-toggle" for="toggle">
+            <div class="dev-toggle-wheel"></div>
+          </label>
+        </div>
+      </div>
+      <div class="floating-icons">
+        <div class="icons instagram">
+          <img src="Images/instagram-logo-instagram-icon-transparent-free-png.webp" alt="icons">
+        </div>
+        <div class="icons twitter">
+          <img src="Images/twitter-new-2023-x-logo-white-background-vector_1017-45422.avif" alt="icons">
+        </div>
+        <div class="icons linkedin">
+          <img src="Images/images.png" alt="icons">
+        </div>
+        <div class="icons youtube">
+          <img src="Images/5295-youtube-i_102568.webp" alt="icons">
+        </div>
+        <div class="icons snapchat">
+          <img src="Images/snapchat-logo-png_seeklogo-249555.png" alt="icons">
+        </div>
+        <div class="icons threads">
+          <img src="Images/images (1).png" alt="icons">
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1>Your social media workspace</h1>
+        <h3>Share consistently without the chaos</h3>
+        <div class="input">
+          <input type="email" placeholder="Enter your email...">
+          <button class="get-started-button">
+            Get started for free &#x2192;
+          </button>
+          <p>By entering your email, you agree to receive emails from Buffer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stats-section-cards">
+        <h1>233,974</h1>
+        <h3>People and brands using Buffer</h3>
+      </div>
+      <div class="stats-section-cards">
+        <h1>10,942,810</h1>
+        <h3>Posts published last month</h3>
+      </div>
+      <div class="stats-section-cards">
+        <h1>11</h1>
+        <h3>Social platforms supported</h3>
+      </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-section-card">
+          <div class="feature-section-card-image publish">
+            <h3>The most complete set of publishing integrations, ever</h3>
+            <img src="Images/publish-composer.avif" alt="feature-image">
+          </div>
+          <div class="feature-section-content">
+            <p class="feature-label">PUBLISH</p>
+            <P class="feature-description">Schedule your content to the most popular platforms including Facebook, Instagram, TikTok, LinkedIn, Threads, Bluesky, YouTube Shorts, Pinterest, Google Business, Mastodon and X.</p>
+            <a href="#">Learn more &#x2192;</a>
+          </div>
+        </div>
+
+        <div class="features-section-card">
+          <div class="feature-section-card-image create">
+            <h3>Turn any idea into the perfect post</h3>
+            <img src="Images/create-ideas.png" alt="feature-image">
+          </div>
+          <div class="feature-section-content">
+            <p class="feature-label">CREATE</p>
+            <P class="feature-description">Whether you’re flying solo or working with a team, Buffer has all the features to help you create, organize, and repurpose your content for any channel. There’s also an AI Assistant if you need it.</p>
+            <a href="#">Learn more &#x2192;</a>
+          </div>
+        </div>
+
+        <div class="features-section-card">
+          <div class="feature-section-card-image community">
+            <h3>Reply to comments in a flash</h3>
+            <img src="Images/community-comments.avif" alt="feature-image">
+          </div>
+          <div class="feature-section-content">
+            <p class="feature-label">COMMUNITY</p>
+            <P class="feature-description">Engage with your audience across all your channels at 10x speed. Buffer will help you triage and respond to comments from one simple dashboard.</P>
+            <a href="#">Learn more &#x2192;</a>
+          </div>
+        </div>
+
+        <div class="features-section-card">
+          <div class="feature-section-card-image insights">
+            <h3>Answers, not just analytics</h3>
+            <img src="Images/insights.avif" alt="feature-image">
+          </div>
+          <div class="feature-section-content">
+            <p class="feature-label">ANALYZE</p>
+            <P class="feature-description">Whether it’s basic analytics or in-depth reporting, Buffer will help you learn what works and how to improve.</P>
+            <a href="#">Learn more &#x2192;</a>
+          </div>
+        </div>
+    </section>
+
+    <section class="more-features-section">
+      <h2>…and so much more!</h2>
+      <div class="more-features-section-grid">
+        <div class="features-section-card">
+          <div class="feature-section-card-image collaborate">
+            <img src="Images/collaborate.avif" alt="feature-image">
+          </div>
+          <div class="feature-section-content">
+            <p class="feature-label">Collaborate</p>
+            <P class="feature-description">Manage, edit, and approve social media posts from your team.</P>
+            <a href="#">Learn more &#x2192;</a>
+          </div>
+        </div>
+
+        <div class="features-section-card">
+          <div class="feature-section-card-image mobile-app">
+            <img src="Images/mobile-app.avif" alt="feature-image">
+          </div>
+          <div class="feature-section-content">
+            <p class="feature-label">Mobile app</p>
+            <P class="feature-description">Manage your social media accounts from anywhere.</P>
+            <a href="#">Learn more &#x2192;</a>
+          </div>
+        </div>
+
+        <div class="features-section-card">
+          <div class="feature-section-card-image start-page">
+            <img src="Images/start-page.avif" alt="feature-image">
+          </div>
+          <div class="feature-section-content">
+            <p class="feature-label">Start page</p>
+            <P class="feature-description">Turn your social bio into a powerful, personalized hub.</P>
+            <a href="#">Learn more &#x2192;</a>
+          </div>
+        </div>
+
+        <div class="features-section-card">
+          <div class="feature-section-card-image ai-assistant">
+            <img src="Images/ai-assistant.avif" alt="feature-image">
+          </div>
+          <div class="feature-section-content">
+            <p class="feature-label">AI assistant</p>
+            <P class="feature-description">Brainstorm ideas, rewrite content, and craft platform-specific posts.</P>
+            <a href="#">Learn more &#x2192;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="favourite-accounts-wrapper">
+      <div class="favourite-accounts-div">
+        <h3>
+          Connect your favorite accounts
+        </h3>
+        <div class="favourite-accounts-icons">
+          <div class="account-icon-wrapper">
+            <img src="Images/bluesky.svg" alt="icons">
+          </div>
+          <div class="account-icon-wrapper">
+            <img src="Images/facebook.svg" alt="icons">
+          </div>
+          <div class="account-icon-wrapper">
+            <img src="Images/applemusic.svg" alt="icons">
+          </div>
+          <div class="account-icon-wrapper">
+            <img src="Images/youtubemusic.svg" alt="icons">
+          </div>
+          <div class="account-icon-wrapper">
+            <img src="Images/instagram.svg" alt="icons">
+          </div>
+          <div class="account-icon-wrapper">
+            <img src="Images/threads.svg" alt="icons">
+          </div>
+          <div class="account-icon-wrapper">
+            <img src="Images/mastodon.svg" alt="icons">
+          </div>
+          <div class="account-icon-wrapper">
+            <img src="Images/pinterest.svg" alt="icons">
+          </div>
+          <div class="account-icon-wrapper">
+            <img src="Images/snapchat.svg" alt="icons">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-section">
+      <div class="audience-section-tabs">
+        <input type="radio" id="creators" name="audience" checked>
+        <label for="creators">Creators</label>
+        <input type="radio" id="small-business" name="audience">
+        <label for="small-business">Small business</label>
+        <input type="radio" id="agencies" name="audience">
+        <label for="agencies">Agencies</label>
+      </div>
+      <div class="audience-section-content-wrapper creators-content">
+        <div class="audience-section-content">
+          <h1>
+            Grow from zero → one → one million
+          </h1>
+          <p class="audience-section-content-description">
+            Whether you’re just getting started on your creator journey or scaling your audience to new heights, Buffer will get your content in front of more people.
+          </p>
+          <div class="audience-section-content-usp">
+            <p>&#10003; Save all your ideas as inspiration strikes</p>
+            <p>&#10003; Learn exactly what content works best and why</p>
+            <p>&#10003; Create once, crosspost everywhere</p>
+          </div>
+        </div>
+        <div class="audience-section-content-card">
+          <h2>The Buffer creator community</h2>
+          <div class="audience-section-content-card-profiles">
+            <div class="profile">
+              <img src="Images/rita-iglesias.jpg" alt="image">
+              <p>@rita_codes</p>
+              <p>34.9k followers on X</p>
+            </div>
+            <div class="profile">
+              <img src="Images/paul-de-la-baume.jpg" alt="image">
+              <p>@Pauldelabaume</p>
+              <p>21k followers on LinkedIn</p>
+            </div>
+            <div class="profile">
+              <img src="Images/yola-bastos.jpg" alt="image">
+              <p>@yola_bastos</p>
+              <p>14.6k followers on Instagram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="audience-section-content-wrapper business-content">
+        <div class="audience-section-content">
+          <h1>
+            Level up your social presence without draining your time
+          </h1>
+          <p class="audience-section-content-description">
+            Every minute and every dollar counts when you’re running a small business. Buffer multiplies your efforts and keeps your online presence thriving with minimal effort.
+          </p>
+          <div class="audience-section-content-usp">
+            <p>&#10003; Schedule content weeks or even months in advance</p>
+            <p>&#10003; See all your posts in one simple dashboard</p>
+            <p>&#10003; World-class customer support</p>
+          </div>
+        </div>
+        <div class="audience-section-content-card">
+          <h2>The Buffer small business community</h2>
+          <div class="audience-section-content-card-profiles">
+            <div class="profile">
+              <img src="Images/midmodmood (1).jpg" alt="image">
+              <p>@midmod.mood</p>
+              <p>236k followers on Instagram</p>
+            </div>
+            <div class="profile">
+              <img src="Images/tina-larsson.jpg" alt="image">
+              <p>@tinalarssonli</p>
+              <p>12k followers on LinkedIn</p>
+            </div>
+            <div class="profile">
+              <img src="Images/pia-cato.jpg" alt="image">
+              <p>@vanillapodbakery</p>
+              <p>5.5k followers on Instagram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="audience-section-content-wrapper agencies-content">
+        <div class="audience-section-content">
+          <h1>
+            The most trusted tool for freelancers and agencies
+          </h1>
+          <p class="audience-section-content-description">
+            uffer has been helping freelancers, consultants, and agencies grow their client accounts for more than a decade.
+          </p>
+          <div class="audience-section-content-usp">
+            <p>&#10003; Intuitive review and approval workflows</p>
+            <p>&#10003; Custom access and permissions</p>
+            <p>&#10003; Unlimited user invites</p>
+            <p>&#10003; Pricing that scales with your business</p>
+            <p>&#10003; 99% post reliability</p>
+          </div>
+        </div>
+        <div class="audience-section-content-card">
+          <h2>The Buffer agency community</h2>
+          <div class="audience-section-content-card-profiles">
+            <div class="profile">
+              <img src="Images/red-pigeon-media.jpg" alt="image">
+              <p>@redpigeonmedia</p>
+              <p>2.2k followers on Instagram</p>
+            </div>
+            <div class="profile">
+              <img src="Images/shored-up-digital.jpg" alt="image">
+              <p>@shoredupdigital</p>
+              <p>2.5k followers on Instagram</p>
+            </div>
+            <div class="profile">
+              <img src="Images/influence-media.jpg" alt="image">
+              <p>@weareinfluencemedia</p>
+              <p>5.5k followers on Instagram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-support-wrapper">
+      <div class="customer-support-content">
+        <h2>CUSTOMER SUPPORT</h2>
+        <h1>Human support, worldwide</h1>
+        <p>Our global Customer Advocacy team is spread across time zones to make sure help is always nearby. Whether you have a quick question, need technical support, or just want to connect, we’re here for you — no bots, just real people who care.</p>
+        <div class="customer-support-content-buttons">
+          <button class="get-started-button">Visit the Help Center</button>
+          <button class="login-button">Join Discord</button>
+        </div>
+        <p>We prioritize customer connection as a company and you could end up speaking with a teammate in any role at Buffer, from Marketers to Engineers.</p>
+        <a href="#">Learn more about our global team &#x2192;</a>
+      </div>
+      <img src="Images/customer-support-team.jpg" alt="image">
+    </section>
+
+    <section class="resources-section-wrapper">
+      <div class="resources-section-description">
+        <h2>Resources</h2>
+        <h1>Fuel your social media success</h1>
+        <p>Everything you need to level up your social strategy—in one place.</p>
+      </div>
+      <div class="resources-section-cards-div">
+        <div class="resources-section-cards card-1">
+          <div class="resources-cards-heading">
+            <h2>Free Marketing Tools</h2>
+            <span>&#x2192;</span>
+          </div>
+          <p>A collection of free tools to make your social media marketing easier and more effective</p>
+          <img src="Images/free-marketing-tools-small.png" alt="image">
+        </div>
+
+        <div class="resources-section-cards card-2">
+          <div>
+            <div class="resources-cards-heading">
+            <h2>Social Media Glossary</h2>
+            <span>&#x2192;</span>
+            </div>
+            <p>A Glossary of the most popular terms to help you make sense of all the social media lingo</p>
+          </div>
+          <img src="Images/social-media-glossary-small.png" alt="image">
+        </div>
+
+        <div class="resources-section-cards card-3">
+          <div class="resources-cards-heading">
+            <h2>Social Media Marketing 101</h2>
+            <span>&#x2192;</span>
+          </div>
+          <p>Your go-to guide for mastering the basics of social media and beyond</p>
+          <img src="Images/social-media-marketing-101-small.png" alt="image">
+        </div> 
+
+        <div class="resources-section-cards card-4">
+          <img src="Images/best-time-to-post-small.png" alt="image">
+          <div class="resources-cards-heading">
+            <h2>Best Time to Post</h2>
+            <span>&#x2192;</span>
+          </div>
+          <p>Discover the best times to post on social media to maximize your engagement</p>
+        </div>
+        
+        <div class="resources-section-cards card-5">
+          <div class="resources-cards-heading">
+            <h2>Social Media Resources</h2>
+            <span>&#x2192;</span>
+          </div>
+          <p>A collection of articles and interviews packed with tips, stories, and insights to level up your social media marketing game</p>
+          <img src="Images/social-media-resources-small.png" alt="image">
+        </div>
+  
+      </div>
+    </section>
+
+    <section class="aboutus-section-wrapper">
+      <div class="aboutus-section-content-div">
+        <div class="aboutus-section-content">
+          <h3>ABOUT US</h3>
+          <h1>We are an open company</h1>
+          <p>Since 2013, we’ve shared Buffer’s finances, team salaries, and other key metrics openly. Our commitment to transparency is rooted in our belief that it fosters trust, keeps us accountable, and helps drive positive change within our industry.</p>
+        </div>
+        <button class="login-button">Open dashboard &#x2192;</button>
+      </div>
+      <div class="aboutus-section-stats-div">
+          <div class="aboutus-stats-card">
+            <h2>MAU</h2>
+            <h3>Monthly active users</h3>
+            <p>234,415</p>
+          </div>
+          <div class="aboutus-stats-card">
+            <h2>Total customers</h2>
+            <h3>Total customers</h3>
+            <p>77,486</p>
+          </div>
+          <div class="aboutus-stats-card">
+            <h2>teammates</h2>
+            <h3>Across 15 countries</h3>
+            <p>73</p>
+          </div>
+          <div class="aboutus-stats-card">
+            <h2>ARR</h2>
+            <h3>Annual recurring revenue</h3>
+            <p>$25.4M</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="get-started-card-wrapper">
+      <div class="get-started-card">
+        <h1>Grow your social presence with confidence</h1>
+        <button class="get-started-card-button">Get started for free &#x2192;</button>
+        <p>No credit card needed. Free forever.</p>
+      </div>
+    </section>
+
+    <footer class="footer-wrapper">
+      <div class="footer-content-div">
+        <div class="footer-column-group">
+          <div class="footer-column">
+            <span>Features</span>
+            <ul>
+              <li>Create</li>
+              <li>publish</li>
+              <li>Community</li>
+              <li>Analyze</li>
+              <li>Collaborate</li>
+            </ul>
+            <span>Tools</span>
+            <ul>
+              <li>AI Assistant</li>
+              <li>Start Page</li>
+              <li>Integrations</li>
+              <li>iOS App</li>
+              <li>Android App</li>
+              <li>Browser Extension</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <span>Channels</span>
+            <ul>
+              <li>Bluesky</li>
+              <li>Facebook</li>
+              <li>Google Business Profile</li>
+              <li>Instagram</li>
+              <li>LinkedIn</li>
+              <li>Mastodon</li>
+              <li>Pinterest</li>
+              <li>Threads</li>
+              <li>TikTok</li>
+              <li>X</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <span>Made for</span>
+            <ul>
+              <li>Creators</li>
+              <li>Small Business</li>
+              <li>Agencies</li>
+              <li>Nonprofits</li>
+              <li>Higher Education</li>
+              <li>Developers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-column-group">
+          <div class="footer-column">
+            <span>Resources</span>
+            <ul>
+              <li>Blog</li>
+              <li>Template Library</li>
+              <li>Social Media Insights</li>
+              <li>Resource Library</li>
+              <li>Social Media Terms Glossary</li>
+              <li>Free Marketing Tools</li>
+              <li>AI Social Media Post Generator</li>
+              <li>Compare Buffer</li>
+              <li>Our Community</li>
+              <li>Buffer API</li>
+              <li>Developer Docs</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <span>Support</span>
+            <ul>
+              <li>Help Center</li>
+              <li>Status</li>
+              <li>Changelog</li>
+              <li>Request a Feature</li>
+            </ul>
+            <span>Transparency</span>
+            <ul>
+              <li>Open Hub</li>
+              <li>Transparent Metrics</li>
+              <li>Transparent Pricing</li>
+              <li>Transparent Salaries</li>
+              <li>Product Roadmap</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <span>Company</span>
+            <ul>
+              <li>About</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Partner Program</li>
+              <li>Legal</li>
+              <li>Sitemap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-buffer">
+          <img src="Images/Buffer_Logo_1.png" alt="logo">
+          <p>Copyright ©2026 Buffer|Privacy|Terms|Security</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

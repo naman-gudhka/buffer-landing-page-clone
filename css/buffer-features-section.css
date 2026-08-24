@@ -1,0 +1,75 @@
+.features-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: var(--primary-padding);
+}
+.features-section-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.6rem;
+  border-radius: var(--primary-border-radius);
+  box-shadow: var(--box-shadow);
+}
+.publish{
+  background-color: var(--pink-card-bg);
+}
+.create{
+  background-color: var(--primary-green-color);
+}
+.community{
+  background-color: var(--yellow-card-bg);
+}
+.insights{
+  background-color: var(--blue-card-bg);
+}
+.feature-section-card-image img{
+  width: 90%;
+  max-width: 500px;
+}
+.feature-section-card-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  border-radius: var(--primary-border-radius);
+}
+.feature-section-card-image h3{
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.feature-section-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
+.feature-label{
+  font-weight: 600;
+}
+.feature-description{
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.feature-section-content a{
+  color: black;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease-in-out;
+}
+.feature-section-content a:hover{
+  transform: translateY(-3px);
+}
+@media (max-width: 767px){
+  .features-section{
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .create img{
+    transform: translateX(1.5rem);
+  }
+}

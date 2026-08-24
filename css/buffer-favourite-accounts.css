@@ -1,0 +1,47 @@
+.favourite-accounts-wrapper{
+  padding: var(--primary-padding);
+}
+.favourite-accounts-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem clamp(1rem ,8vw, 2rem);
+  gap: 2rem;
+  border-radius: var(--primary-border-radius);
+  border: 1px solid rgb(236, 236, 236);
+  box-shadow: var(--box-shadow);
+}
+.favourite-accounts-div h3{
+  font-weight: 500;
+  font-size: clamp(1rem, 4.5vw, 2rem);
+}
+.favourite-accounts-icons{
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.account-icon-wrapper{
+  display: flex;
+  border: 1px solid black;
+  padding: 0 1rem;
+  border-radius: var(--primary-border-radius);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.account-icon-wrapper img{
+  height: 6rem;
+  width: 4rem;
+}
+.account-icon-wrapper:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 1024px){
+  .account-icon-wrapper img{
+    height: 4rem;
+    width: 2rem;
+  }
+  .favourite-accounts-icons{
+    justify-content: center;
+  }
+}

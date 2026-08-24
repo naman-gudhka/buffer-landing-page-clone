@@ -1,0 +1,121 @@
+.resources-section-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1rem, 3vw, 8rem);
+}
+.resources-section-description h2{
+  font-weight: 400;
+}
+.resources-section-description h1{
+  font-weight: 500;
+  font-size: clamp(1rem, 4vw, 3rem);
+}
+.resources-section-description p{
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--gray-color-description);
+}
+.resources-section-cards-div{
+  display: grid;
+  gap: 1.5rem;
+  padding: 3rem;
+}
+.resources-section-cards-wrapper{
+  padding: 0.5rem;
+  border-radius: var(--primary-border-radius);
+  box-shadow: var(--box-shadow);
+}
+.resources-section-cards{
+  padding: 2rem 2rem 0 2rem;
+  border-radius: var(--primary-border-radius);
+  cursor: pointer;
+  border: 10px solid white;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+}
+.resources-section-cards img{
+  height: clamp(65%, 75%, 40%);
+  width: clamp(70%, 80%, 90%);
+  margin-top: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.resources-cards-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resources-cards-heading span{
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+.resources-cards-heading h2{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.resources-section-cards p{
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: rgb(88, 80, 80);
+}
+.resources-section-cards:hover img{
+  transform: scale(1.05);
+}
+.resources-section-cards:hover span{
+  transform: scale(1.2);
+}
+.card-1{
+  background-color: var(--pink-card-bg);
+  grid-column: 1;
+  grid-row: 1;
+}
+.card-2{
+  background-color: var(--blue-card-bg);
+  grid-column: 2/4;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-2 img{
+  margin-top: auto;
+  height: 200px;
+  width: 75%;
+}
+.card-3{
+  background-color: var(--yellow-card-bg);
+  grid-column: 1;
+  grid-row: 2;
+}
+.card-4{
+  background-color: var(--pink-card-bg);
+  grid-row: 2;
+  grid-column: 2;
+}
+.card-4 img{
+  height: 300px;
+  margin-bottom: 2rem;
+}
+.card-5{
+  background-color: var(--yellow-card-bg);
+  grid-column: 3;
+  grid-row: 2;
+}
+@media (max-width: 1023px) {
+  .resources-section-cards-div{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 1rem;
+  }
+  .resources-section-cards{
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .card-2{
+    flex-direction: column;
+  }
+}

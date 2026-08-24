@@ -1,0 +1,208 @@
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 0;
+  position: relative;
+  background: linear-gradient( white, transparent 20% ,transparent 60%, transparent 60%, transparent 40%, transparent 20%,white);
+}
+.hero::before{
+  content: '';
+  background-image: 
+        linear-gradient(rgb(234, 234, 234) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(234, 234, 234) 1px, transparent 1px);
+  position: absolute;   
+  inset: 0;
+  background-size: 60px 60px;
+  z-index: -1;
+}
+.icons img{
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 2px 8px rgb(0.3, 0.3, 0.3, 0.2);
+}
+.instagram{
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  animation: float 5s ease-in-out infinite;
+}
+.linkedin{
+  position: absolute;
+  left: 2%;
+  top: 80%;
+  animation: float 7s ease-in-out infinite;
+}
+.twitter{
+  position: absolute;
+  left: 20%;
+  top: 60%;
+  animation: float 6s ease-in-out infinite;
+}
+.youtube{
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  animation: float 5s ease-in-out infinite;
+}
+.snapchat{
+  position: absolute;
+  right: 2%;
+  top: 80%;
+  animation: float 7s ease-in-out infinite;
+}
+.threads{
+  position: absolute;
+  right: 20%;
+  top: 60%;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float{
+  0%{
+    transform: translate(0,0);
+  }
+  25%{
+    transform: translate(8px,-10px);
+  }
+  50%{
+    transform: translate(-6px,-18px);
+  }
+  75%{
+    transform: translate(-10px,-5px);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+@media (max-width: 767px) {
+  .floating-icons{
+    display: none;
+  }  
+}
+.API-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1200px, 95vw);
+  height: 200px;
+  background-color: var(--api-div-footer-bg);
+  border-radius: var(--primary-border-radius);
+  cursor: pointer;
+  padding: 0 3rem;
+}
+.API-div img{
+  height: 3.5rem;
+  width: 12rem;
+  object-fit: fill;
+}
+.API-div h2{
+  font-size: clamp(1rem, 8vw, 3rem);
+  color: white;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.API-div span{
+  color: var(--primary-green-color);
+}
+.API-content{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dev-mode{
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.dev-mode h2{
+  font-size: 1.5rem;
+}
+.dev-toggle{
+  background-color: var(--gray-color-description);
+  height: 1.2rem;
+  width: 2.5rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: var(--primary-border-radius);
+  cursor: pointer;
+}
+.dev-toggle-wheel{
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+#toggle{
+  display: none;
+}
+#toggle:checked + .dev-toggle .dev-toggle-wheel{
+  transform: translateX(100%);
+}
+.API-div:has(#toggle:checked){
+  background-color: var(--gray-color-description);
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 0 0;
+  width: min(650px,90vw);
+  text-align: center;
+}
+.hero h1{
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.hero h3{
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.hero p{
+  margin-top: 1rem;
+  color: var(--gray-color-description);
+  width: min(500px, 75vw);
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+}
+.input input{
+  width: min(600px, 75vw);
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 38px;
+  border: 1px solid var(--gray-color-description);
+  box-shadow: 0 0 2px 0 var(--gray-color-description);
+}
+.input button{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+@media (max-width: 767px){
+  .input button{
+    position: static;
+    margin-top: 1rem;
+  }
+  .input button{
+    padding: 1rem 4rem;
+    border-radius: var(--secondary-border-radius);
+  }
+  .API-div{
+    flex-direction: column;
+    padding: 2rem 0.2rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .API-div img{
+    width: 10rem;
+  }
+  .dev-mode{
+    padding: 0 1.3rem;
+  }
+}

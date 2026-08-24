@@ -1,0 +1,36 @@
+.get-started-card-wrapper{
+  padding: 1rem clamp(1rem, 3vw, 3rem);
+}
+.get-started-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: var(--primary-green-color);
+  border: 10px solid white;
+  box-shadow: var(--box-shadow);
+  border-radius: 12px;
+  text-align: center;
+}
+.get-started-card h1{
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 500;
+}
+.get-started-card p{
+  white-space: nowrap;
+}
+.get-started-card-button{
+  border: none;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 1.6rem;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  white-space: nowrap;
+  background-color: var(--api-div-footer-bg);
+}
+.get-started-card-button:hover{
+  transform: translateY(-0.2rem);
+}
